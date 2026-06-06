@@ -1,0 +1,11 @@
+# macOS
+.DS_Store
+
+# Agent runtime / local state
+.omc/
+.claude/settings.local.json
+
+# Editor / misc
+*.log
+.env
+.env.*
