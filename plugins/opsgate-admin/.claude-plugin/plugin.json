@@ -1,0 +1,14 @@
+{
+  "name": "opsgate-admin",
+  "displayName": "Opsgate Admin",
+  "version": "0.1.0",
+  "description": "opsgate admin MCP — credential lifecycle (register/update/delete). Privileged; install separately from the read-only runtime plugin.",
+  "author": {
+    "name": "heeyong kang"
+  },
+  "license": "Apache-2.0",
+  "keywords": ["ops", "credentials", "admin", "mcp"],
+  "mcpServers": "./.mcp.json",
+  "skills": "./skills/",
+  "defaultEnabled": false
+}
