@@ -1,0 +1,8 @@
+{
+  "name": "project-jelly",
+  "owner": {
+    "name": "project-jelly"
+  },
+  "description": "project-jelly의 설치 가능한 skill/plugin/MCP 마켓플레이스.",
+  "plugins": []
+}
