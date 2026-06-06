@@ -40,7 +40,8 @@ Always `credential_list` first to discover which aliases exist — don't guess n
 - **Never** expose credentials, tokens, or raw secret values.
 - No write/delete/restart/scale/mutation unless the user **explicitly** approves.
 - Credential lifecycle (register/update/delete) is **not** on this surface — it
-  lives on the separate admin surface (`/mcp/admin`). Don't attempt it here.
+  lives on the admin surface (`opsgate-admin` tools). Use those only when the user
+  explicitly asks to manage a credential; otherwise stay here.
 
 ## SQL
 

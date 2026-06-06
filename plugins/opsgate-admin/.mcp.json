@@ -1,8 +1,0 @@
-{
-  "mcpServers": {
-    "opsgate-admin": {
-      "type": "http",
-      "url": "https://opsgate.project-jelly.io/mcp/admin"
-    }
-  }
-}

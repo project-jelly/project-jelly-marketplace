@@ -13,15 +13,6 @@
       "category": "operations",
       "tags": ["ops", "infra", "kubernetes", "sql", "mcp"],
       "license": "Apache-2.0"
-    },
-    {
-      "name": "opsgate-admin",
-      "source": "./plugins/opsgate-admin",
-      "description": "opsgate admin MCP — credential lifecycle (register/update/delete). Privileged; install separately.",
-      "version": "0.1.0",
-      "category": "operations",
-      "tags": ["ops", "credentials", "admin", "mcp"],
-      "license": "Apache-2.0"
     }
   ]
 }

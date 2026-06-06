@@ -3,6 +3,10 @@
     "opsgate": {
       "type": "http",
       "url": "https://opsgate.project-jelly.io/mcp"
+    },
+    "opsgate-admin": {
+      "type": "http",
+      "url": "https://opsgate.project-jelly.io/mcp/admin"
     }
   }
 }

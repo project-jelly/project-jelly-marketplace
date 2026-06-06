@@ -1,9 +1,18 @@
 # opsgate plugin
 
-opsgate runtime MCP (read-only operational diagnostics) + the `opsgate-basic` skill.
+Wires the opsgate MCP (a remote, OAuth-authenticated credential broker) and ships
+the usage skills. **No secrets are bundled** — each user authenticates via `/mcp`.
 
-opsgate is a remote, OAuth-authenticated credential broker. This plugin only
-wires the MCP server and ships the usage skill — **no secrets are bundled**.
+opsgate exposes two MCP surfaces, both connected by this one plugin. They are
+**not** a privilege gate (same authenticated user) — they just mount different tools:
+
+| MCP server | surface | tools | skill |
+|---|---|---|---|
+| `opsgate` | `/mcp` (runtime) | `api_call`, `sql_query`, `sql_schema`, `credential_list`, `me` | `opsgate-basic` |
+| `opsgate-admin` | `/mcp/admin` (admin) | `credential_register/update/delete_*`, `credential_list`, `me` | `opsgate-admin` |
+
+Day-to-day you use the runtime tools; the admin tools are for registering/maintaining
+credentials and are only reached on explicit request.
 
 ## Install
 
@@ -15,7 +24,7 @@ wires the MCP server and ships the usage skill — **no secrets are bundled**.
 
 ## Authenticate (once, per machine)
 
-The MCP server is registered on enable, but each user authenticates themselves:
+Both servers register on enable; each user authenticates themselves:
 
 ```text
 /mcp        # complete the opsgate (authgate) OAuth login in the browser
@@ -24,11 +33,6 @@ The MCP server is registered on enable, but each user authenticates themselves:
 ## Verify
 
 ```text
-/help                  # /opsgate:opsgate-basic should appear
-/mcp                   # opsgate server should be listed
+/help                  # /opsgate:opsgate-basic and /opsgate:opsgate-admin appear
+/mcp                   # opsgate and opsgate-admin servers listed
 ```
-
-## Notes
-
-- Endpoint: `https://opsgate.project-jelly.io/mcp` (runtime surface, read-only).
-- The admin surface (`/mcp/admin`, credential lifecycle) is **not** included here.
