@@ -1,0 +1,14 @@
+{
+  "name": "opsgate",
+  "displayName": "Opsgate",
+  "version": "0.1.0",
+  "description": "opsgate MCP (read-only operational diagnostics) and a usage skill.",
+  "author": {
+    "name": "heeyong kang"
+  },
+  "license": "Apache-2.0",
+  "keywords": ["ops", "infra", "kubernetes", "sql", "mcp"],
+  "mcpServers": "./.mcp.json",
+  "skills": "./skills/",
+  "defaultEnabled": false
+}
