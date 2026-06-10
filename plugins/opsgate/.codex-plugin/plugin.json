@@ -1,0 +1,19 @@
+{
+  "name": "opsgate",
+  "version": "0.1.0",
+  "description": "opsgate MCP (runtime + admin surfaces) with usage and credential-lifecycle skills.",
+  "author": {
+    "name": "heeyong kang"
+  },
+  "license": "Apache-2.0",
+  "keywords": ["ops", "infra", "http", "sql", "postgres", "credentials", "mcp"],
+  "skills": "./skills/",
+  "mcpServers": "./mcp.codex.json",
+  "interface": {
+    "displayName": "Opsgate",
+    "shortDescription": "Policy-gated HTTP/SQL credential broker for LLM clients.",
+    "longDescription": "Connects the opsgate MCP (runtime /mcp + admin /mcp/admin) so the agent calls HTTP APIs and Postgres by alias without ever seeing secrets or target URLs. Ships the opsgate-basic (read-only usage) and opsgate-admin (credential lifecycle) skills.",
+    "developerName": "heeyong kang",
+    "category": "Developer Tools"
+  }
+}
