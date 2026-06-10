@@ -7,7 +7,7 @@
     "name": "heeyong kang"
   },
   "license": "Apache-2.0",
-  "keywords": ["ops", "infra", "kubernetes", "sql", "credentials", "mcp"],
+  "keywords": ["ops", "infra", "http", "sql", "postgres", "credentials", "mcp"],
   "mcpServers": "./.mcp.json",
   "skills": "./skills/",
   "defaultEnabled": false

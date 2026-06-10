@@ -11,7 +11,7 @@
       "description": "opsgate MCP (read-only operational diagnostics) and a usage skill.",
       "version": "0.1.0",
       "category": "operations",
-      "tags": ["ops", "infra", "kubernetes", "sql", "mcp"],
+      "tags": ["ops", "infra", "http", "sql", "postgres", "credentials", "mcp"],
       "license": "Apache-2.0"
     }
   ]
