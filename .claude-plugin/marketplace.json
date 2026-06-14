@@ -4,5 +4,15 @@
     "name": "project-jelly"
   },
   "description": "project-jelly의 설치 가능한 skill/plugin/MCP 마켓플레이스.",
-  "plugins": []
+  "plugins": [
+    {
+      "name": "opsgate",
+      "source": "./plugins/opsgate",
+      "description": "opsgate MCP (read-only operational diagnostics) and a usage skill.",
+      "version": "0.1.0",
+      "category": "operations",
+      "tags": ["ops", "infra", "http", "sql", "postgres", "credentials", "mcp"],
+      "license": "Apache-2.0"
+    }
+  ]
 }

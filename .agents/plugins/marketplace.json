@@ -1,0 +1,20 @@
+{
+  "name": "project-jelly",
+  "interface": {
+    "displayName": "project-jelly"
+  },
+  "plugins": [
+    {
+      "name": "opsgate",
+      "source": {
+        "source": "local",
+        "path": "./plugins/opsgate"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    }
+  ]
+}

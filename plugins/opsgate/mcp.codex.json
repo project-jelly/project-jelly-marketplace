@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "opsgate": {
+      "url": "https://opsgate.project-jelly.io/mcp"
+    },
+    "opsgate-admin": {
+      "url": "https://opsgate.project-jelly.io/mcp/admin"
+    }
+  }
+}

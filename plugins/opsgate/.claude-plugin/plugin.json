@@ -1,0 +1,14 @@
+{
+  "name": "opsgate",
+  "displayName": "Opsgate",
+  "version": "0.1.0",
+  "description": "opsgate MCP (runtime + admin surfaces) with usage and credential-lifecycle skills.",
+  "author": {
+    "name": "heeyong kang"
+  },
+  "license": "Apache-2.0",
+  "keywords": ["ops", "infra", "http", "sql", "postgres", "credentials", "mcp"],
+  "mcpServers": "./.mcp.json",
+  "skills": "./skills/",
+  "defaultEnabled": false
+}
